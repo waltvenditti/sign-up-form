@@ -1,3 +1,52 @@
-h1 {
-    color: darkgreen;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.mainDiv {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.imgcropDiv {
+    display: block;
+    height: 800px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.imgcropDiv img {
+    position: absolute; 
+    left: -200px;
+    top: -100px;
+}
+
+.textandformDiv {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.textandformDiv p {
+    
+}
+
+.formDiv {
+    background-color: white;
+}
+
+.forminputsDiv {
+    display: flex;
+}
+
+.forminputscolDiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
 }
