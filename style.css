@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./Norse-Bold.otf);
+}
+
+html {
+    background-color: rgb(49, 49, 49);
+}
 
 body {
     margin: 0;
@@ -8,18 +16,38 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    width: 960px;
+    margin: auto;
 }
 
 .imgcropDiv {
     display: block;
-    height: 800px;
+    height: 900px;
     width: 400px;
     position: relative;
     overflow: hidden;
     flex: 0 0 auto;
 }
 
-.imgcropDiv img {
+.bannerDiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 100px;
+    top: 188px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: "Norse Bold";
+    font-size: 56px;
+    color: white;
+    justify-content: center;
+}
+
+#odinImg {
+    height: 80px;
+}
+
+#forestImg {
     position: absolute; 
     left: -200px;
     top: -100px;
@@ -29,11 +57,19 @@ body {
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-   
 }
 
 .textandformDiv p {
-    
+    margin-left: 40px;
+    margin-top: 0;
+}
+
+.textandformDiv p:first-child {
+    margin-top: 80px;
+}
+
+.textandformDiv {
+    font-family: helvetica, sans-serif;
 }
 
 .formDiv {
@@ -44,9 +80,61 @@ body {
     display: flex;
 }
 
+.formDiv legend {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding-top: 16px;
+}
+
 .forminputscolDiv {
     display: flex;
     flex-direction: column;
     margin-left: 40px;
-    margin-right: 40px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+input:last-child {
+    margin-bottom: 24px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input:focus {
+    outline: 2px solid rgb(33, 194, 132);
+}
+
+form button[type="submit"] {
+    background-color: rgba(24, 112, 71, 0.281);
+    border: 0;
+    padding: 6px 18px;
+    margin-top: 24px;
+    margin-left: 40px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+form button[type="submit"]:hover {
+    background-color: rgba(173, 128, 32, 0.479);
+}
+
+form button[type="submit"]:active {
+    background-color: black;
+    color: white;
+}
+
+#password:invalid:focus,
+#passwordConfirm:invalid:focus {
+    outline: 2px solid rgb(194, 33, 33);
+}
+
+#submitDiv p {
+    margin-left: 40px;
+    font-size: 13px;
 }

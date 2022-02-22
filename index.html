@@ -11,20 +11,24 @@
 <body>
     <div class="mainDiv">
         <div class="imgcropDiv">
-            <img src="./pine-forest.jpg" alt="pine tree" width="800px" />
+            <img src="./pine-forest.jpg" alt="pine tree" width="800px" id="forestImg"/>
+            <div class="bannerDiv">
+                <img src="./odin-lined.png" id="odinImg"/>
+                <p>ODIN</p>
+            </div>
         </div>
         <div class="textandformDiv">
-            <p>This is not a real online service. You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
-            <p>You <i>know</i> you want to.</p>
+            <p>This is not a real online service. This is not a real online service. This is not a real online service. This is not a real online service. This is a real online service. This is a real online service.</p>
+            <p>This is a <i>real online service</i>.</p>
             <form action="">
                 <div class="formDiv">
-                    <legend>lets do it... ugh.</legend>
+                    <legend>Sign up now. NOW.</legend>
                     <div class="forminputsDiv">
                         <div class="forminputscolDiv">
                             <label for="firstName">First name</label>
-                            <input type="text" id="firstName">
+                            <input type="text" id="firstName" required>
                             <label for="email">Email</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" required>
                             <label for="password">password</label>
                             <input type="password" id="password" required>
                         </div>
@@ -34,12 +38,14 @@
                             <label for="phoneNo">Phone Number</label>
                             <input type="tel" id="phoneNo">
                             <label for="passwordConfirm">Confirm Password</label>
-                            <input type="password" id="passwordConfirm">
+                            <input type="password" id="passwordConfirm" required>
                         </div>
                     </div>
                 </div>
+                <div id="submitDiv">
                     <button type="submit">Create Account</button>
-                    <p>Already have an account?<a href="https://duckduckgo.com/" target="new">Log in</a></p>
+                    <p>Already have an account? <a href="https://duckduckgo.com/" target="new">Log in</a></p>
+                </div>
             </form>
         </div>
     </div>
